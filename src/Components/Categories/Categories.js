@@ -10,7 +10,7 @@ const allProducts = [
 ]
 
 const Categories = () => {
-    const category = useContext(CategoryContext);
+    const [category] = useContext(CategoryContext);
     const [products, setProducts] = useState([]);
 
     useEffect( () => {

@@ -1,14 +1,14 @@
 import React, { useContext } from 'react';
-// import { CategoryContext } from '../../App';
+import { CategoryContext } from '../../App';
 import './CategoryDetail.css';
 
 const CategoryDetail = (props) => {
-    const { name, category } = props.product;
+    const { name } = props.product;
     // const category = useContext(CategoryContext); // Context Api
 
     return (
         <div className="categoryDetail">
-            <p>Category Detail Value: {category}</p>
+            <p>Category Detail Value: {name}</p>
         </div>
     );
 };
